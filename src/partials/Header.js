@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="inverted">
             <div className="ui container">
-                <div className="ui violet fixed inverted menu">
+                <div className="ui green fixed inverted menu">
                     <div className="item">
                         <img src="/assets/images/logo-kabupaten.png" alt="logo" />
                     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchSumberdana } from '../actions';
+import RealisasiUmum from './RealisasiUmum';
 
 class DataSumberdana extends React.Component {
     componentDidMount() {
@@ -44,8 +45,10 @@ class DataSumberdana extends React.Component {
     render() {
         return (
             <div>
+              <RealisasiUmum />
               <div className="ui divider"></div>
               {this.renderList()}
+
             </div>
         )
     }
