@@ -1,7 +1,7 @@
 import sickat from '../api/sickat';
 import {
     FETCH_SUMBERDANA,
-    FETCH_REALISASIUMUM
+    FETCH_REALISASIPD
 } from './types';
 
 export const fetchSumberdana = () => async dispatch => {
@@ -10,8 +10,8 @@ export const fetchSumberdana = () => async dispatch => {
     dispatch({ type: FETCH_SUMBERDANA, payload: response.data.result });
 }
 
-export const fetchRealisasiUmum = () => async dispatch => {
-    const response = await sickat.get('/realisasiumum/');
+export const fetchRealisasiPd = () => async dispatch => {
+    const response = await sickat.get('/realisasipd/');
 
-    dispatch({ type: FETCH_REALISASIUMUM, payload: response.data.result });
+    dispatch({ type: FETCH_REALISASIPD, payload: response.data.result });
 }

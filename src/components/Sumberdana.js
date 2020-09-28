@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchSumberdana } from '../actions';
 import RealisasiUmum from './RealisasiUmum';
+import Realisasipd from './Realisasipd';
 
 class DataSumberdana extends React.Component {
     componentDidMount() {
@@ -20,7 +21,7 @@ class DataSumberdana extends React.Component {
                     <tr>
                       <th>SUMBER DANA</th>
                       <th className="ui center aligned">PAGU</th>
-                      <th className="ui center aligned">Realisasi Uang</th>
+                      <th className="ui center aligned">REALISASI UANG</th>
                       <th className="ui center aligned">PK (%)</th>
                       <th className="ui center aligned">PF (%)</th>
                     </tr>
@@ -48,7 +49,8 @@ class DataSumberdana extends React.Component {
               <RealisasiUmum />
               <div className="ui divider"></div>
               {this.renderList()}
-
+              <div className="ui divider"></div>
+              <Realisasipd />
             </div>
         )
     }

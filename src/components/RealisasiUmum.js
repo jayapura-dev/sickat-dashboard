@@ -30,8 +30,8 @@ class RealisasiUmum extends React.Component {
                   <div className="ui fluid card yellow">
                     <div className="content">
                       <div className="right-text">
-                        <h5>KEUANGAN :</h5>
-                        <div className="desription"><h3>{this.state.umum.map(u =>(u.rk))}</h3></div>
+                        <h5>REALISASI UANG :</h5>
+                        <div className="desription"><h4>{this.state.umum.map(u =>(u.rk))}</h4></div>
                         
                       </div>
                       <div className="left-img"><img width="30%" src="assets/images/salary.png" alt="logo" /></div>
@@ -42,8 +42,8 @@ class RealisasiUmum extends React.Component {
                   <div className="ui fluid card pink">
                     <div className="content">
                       <div className="right-text">
-                        <h5>PK :</h5>
-                        <div className="desription"><h3>{this.state.umum.map(u =>(u.pk))} %</h3></div>
+                        <h5>KEUANGAN :</h5>
+                        <div className="desription"><h4>{this.state.umum.map(u =>(u.pk))} %</h4></div>
                         
                       </div>
                       <div className="left-img"><img width="30%" src="assets/images/pie-chart.png" alt="logo" /></div>
@@ -54,8 +54,8 @@ class RealisasiUmum extends React.Component {
                   <div className="ui fluid card green">
                     <div className="content">
                       <div className="right-text">
-                        <h5>PF :</h5>
-                        <div className="desription"><h3>{this.state.umum.map(u =>(u.pf))} %</h3></div>
+                        <h5>FISIK :</h5>
+                        <div className="desription"><h4>{this.state.umum.map(u =>(u.pf))} %</h4></div>
                         
                       </div>
                       <div className="left-img"><img width="30%" src="assets/images/research.png" alt="logo" /></div>
