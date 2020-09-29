@@ -10,10 +10,10 @@ const Header = () => {
                         <img src="/assets/images/logo-kabupaten.png" alt="logo" />
                     </div>
                     <li className="active item">
-                        <Link to="/">Home</Link>
+                        <Link to="/">Matriks</Link>
                     </li>
                     <li className="item">
-                       <Link to="/Contack">Contack</Link>
+                       <Link to="/Contack">Grafik</Link>
                     </li>
                     <li className="item">
                         <Link to="/"></Link>

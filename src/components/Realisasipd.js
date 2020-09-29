@@ -17,17 +17,24 @@ class Realisasipd extends React.Component {
                 <table className="ui celled table striped small">
                   <thead>
                     <tr>
-                      <th>No</th>
-                      <th>PERANNGKAT DAERAH</th>
-                      <th className="ui center aligned">PAGU</th>
-                      <th className="ui center aligned">REALISASI UANG</th>
-                      <th className="ui center aligned">SISA</th>
-                      <th className="ui center aligned">PK (%)</th>
-                      <th className="ui center aligned">PF (%)</th>
-                      <th className="ui center aligned">JP</th>
-                      <th className="ui center aligned">JPT</th>
-                      <th className="ui center aligned">JK</th>
-                      <th className="ui center aligned">JKT</th>
+                      <th rowspan="2">No</th>
+                      <th rowspan="2">PERANNGKAT DAERAH</th>
+                      <th rowspan="2" className="ui center aligned">PAGU</th>
+                      <th rowspan="2" className="ui center aligned">REALISASI UANG</th>
+                      <th rowspan="2" className="ui center aligned">SISA</th>
+                      <th className="ui center aligned" colspan="2">PROSENTASE</th>
+                      <th className="ui center aligned" colspan="3">PROGRAM</th>
+                      <th className="ui center aligned" colspan="3">KEGIATAN</th>
+                    </tr>
+                    <tr>
+                      <th>PK (%)</th>
+                      <th>PF (%)</th>
+                      <th>JPT</th>
+                      <th>JP</th>
+                      <th>JPBT</th>
+                      <th>JK</th>
+                      <th>JKT</th>
+                      <th>JKBT</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -38,12 +45,14 @@ class Realisasipd extends React.Component {
                        <td>{item.pagu_keu}</td>
                        <td>{item.rk}</td>
                        <td>{item.sisa}</td>
-                       <td>{item.pk}</td>
-                       <td>{item.pf}</td>
-                       <td>{item.jp}</td>
-                       <td>{item.jpt}</td>
-                       <td>{item.jk}</td>
-                       <td>{item.jkt}</td>
+                       <td className="ui center aligned">{item.pk}</td>
+                       <td className="ui center aligned">{item.pf}</td>
+                       <td className="ui center aligned">{item.jp}</td>
+                       <td className="ui center aligned">{item.jpt}</td>
+                       <td className="ui center aligned">{item.jp - item.jpt}</td>
+                       <td className="ui center aligned">{item.jk}</td>
+                       <td className="ui center aligned">{item.jkt}</td>
+                       <td className="ui center aligned">{item.jk - item.jkt}</td>
                      </tr>
                     ))}
                   </tbody>

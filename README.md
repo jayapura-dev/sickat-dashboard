@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------------------------------------------------------
 
 ## System :
-* Bahasa Utama :
+* Langguages :
   - JSX
   - Javascript
 
@@ -21,7 +21,8 @@
 * Library :
   - Axios
   - React Redux
-  - JWT
+  - JWT (Authenctication)
+  - API Key (From REST Framework)
 
 * Template :
   - [Semantic UI](https://semantic-ui.com)
@@ -33,14 +34,14 @@
 
 ## View Dashboard
 
-* Matriks
+* MATRIKS
   - [x] REALISASI PER SUMBER DANA
   - [x] REALISASI UMUM (APBD KABUPATEN)
   - [x] REALISASI UMUM PERANGKAT DAERAH
   - [ ] REALISASI PD PER SUMBER DANA
   - [ ] PEMBAGIAN APBD PER SUMBER DANA
 
-* Grafik
+* GRAFIK
   - [x] REALISASI PER SUMBER DANA
   - [x] REALISASI UMUM (APBD KABUPATEN)
   - [x] REALISASI UMUM PERANGKAT DAERAH

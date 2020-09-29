@@ -19,11 +19,15 @@ class DataSumberdana extends React.Component {
                 <table className="ui celled table striped small">
                   <thead>
                     <tr>
-                      <th>SUMBER DANA</th>
-                      <th className="ui center aligned">PAGU</th>
-                      <th className="ui center aligned">REALISASI UANG</th>
-                      <th className="ui center aligned">PK (%)</th>
-                      <th className="ui center aligned">PF (%)</th>
+                      <th rowspan="2">SUMBER DANA</th>
+                      <th rowspan="2" className="ui center aligned">PAGU</th>
+                      <th rowspan="2" className="ui center aligned">REALISASI UANG</th>
+                      <th rowspan="2" className="ui center aligned">SISA</th>
+                      <th className="ui center aligned" colspan="2">PROSENTASE</th>
+                    </tr>
+                    <tr>
+                      <th>PK (%)</th>
+                      <th>PF (%)</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -32,8 +36,9 @@ class DataSumberdana extends React.Component {
                        <td className="uppercase">{item.sumber_dana}</td>
                        <td>{item.pagu}</td>
                        <td>{item.rk}</td>
-                       <td>{item.pk}</td>
-                       <td>{item.pf}</td>
+                       <td>{item.sisa}</td>
+                       <td className="ui center aligned">{item.pk}</td>
+                       <td className="ui center aligned">{item.pf}</td>
                      </tr>
                     ))}
                   </tbody>
