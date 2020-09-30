@@ -6,8 +6,6 @@
   <a href="https://github.com/Ekhel/SICKAT_V1.6/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" target="_blank"></a>
 </p>
 
-<p align="center"><img src="https://github.com/jayapura-dev/sickat-dashboard/blob/master/public/assets/mockup-dashboard.png" width="800px"></p>
-
 ----------------------------------------------------------------------------------------------------------------------
 
 ## System :
