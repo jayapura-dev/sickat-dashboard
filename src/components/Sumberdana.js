@@ -4,6 +4,8 @@ import { fetchSumberdana } from '../actions';
 import RealisasiUmum from './RealisasiUmum';
 import Realisasipd from './Realisasipd';
 
+import NumberFormat from 'react-number-format';
+
 class DataSumberdana extends React.Component {
     componentDidMount() {
         this.props.fetchSumberdana();
@@ -34,9 +36,9 @@ class DataSumberdana extends React.Component {
                     {this.props.sumberdana.map(item => (
                      <tr key={item.sumber_dana}>
                        <td className="uppercase">{item.sumber_dana}</td>
-                       <td>{item.pagu}</td>
-                       <td>{item.rk}</td>
-                       <td>{item.sisa}</td>
+                       <td><NumberFormat value={item.pagu} displayType={'text'} thousandSeparator={true} /></td>
+                       <td><NumberFormat value={item.rk} displayType={'text'} thousandSeparator={true} /></td>
+                       <td><NumberFormat value={item.sisa} displayType={'text'} thousandSeparator={true} /></td>
                        <td className="ui center aligned">{item.pk}</td>
                        <td className="ui center aligned">{item.pf}</td>
                      </tr>

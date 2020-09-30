@@ -23,6 +23,8 @@
   - React Redux
   - JWT (Authenctication)
   - API Key (From REST Framework)
+  - react-number-format
+  - react-to-pdf
 
 * Template :
   - [Semantic UI](https://semantic-ui.com)
