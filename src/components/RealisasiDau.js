@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchRealisasiPd } from '../actions';
+import { fetchRealisasiDau } from '../actions';
 import NumberFormat from 'react-number-format';
 import ReactToPdf from 'react-to-pdf';
 
-class Realisasipd extends React.Component {
+class RealisasiDau extends React.Component {
     componentDidMount() {
-        this.props.fetchRealisasiPd();
+        this.props.fetchRealisasiDau();
     }
 
     renderList(){
@@ -20,7 +20,7 @@ class Realisasipd extends React.Component {
             <div>
               <div className="ui segment">
                 <div className="ui header">
-                  <h4>REALISASI UMUM (PERANGAKAT DAERAH)</h4>
+                  <h4>REALISASI DAU (PERANGAKAT DAERAH)</h4>
                 </div>
                 <ReactToPdf targetRef={ref} filename="Realisasi PD.pdf" options={options}>
                   {({toPdf}) => (
@@ -53,11 +53,11 @@ class Realisasipd extends React.Component {
                         </tr>
                       </thead>
                     <tbody>
-                      {this.props.realisasipd.map(item => (
+                      {this.props.dau.map(item => (
                       <tr key={item.id_pd}>
                         <td>{item.no}</td>
                         <td className="uppercase">{item.pd}</td>
-                        <td><NumberFormat value={item.pagu_keu} displayType={'text'} thousandSeparator={true} /></td>
+                        <td><NumberFormat value={item.pagu_sumberdana} displayType={'text'} thousandSeparator={true} /></td>
                         <td><NumberFormat value={item.rk} displayType={'text'} thousandSeparator={true} /></td>
                         <td><NumberFormat value={item.sisa} displayType={'text'} thousandSeparator={true} /></td>
                         <td className="ui center aligned">{item.pk}</td>
@@ -105,7 +105,7 @@ class Realisasipd extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    return { realisasipd:  Object.values(state.realisasipd) };
+    return { dau:  Object.values(state.dau) };
 }
 
-export default connect(mapStateToProps, { fetchRealisasiPd })(Realisasipd);
+export default connect(mapStateToProps, { fetchRealisasiDau })(RealisasiDau);

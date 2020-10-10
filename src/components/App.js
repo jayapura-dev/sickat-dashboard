@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from '../partials/Header';
 //import Footer from '../partials/Footer';
+import Dau from './RealisasiDau';
 
 import Sumberdana from './Sumberdana';
 
@@ -17,7 +18,7 @@ class App extends React.Component {
                         <br />
                     <Switch>
                         <Route path="/" exact component={Sumberdana} />
-                        <Route exact path="/" component="" />
+                        <Route path="/Dau" component={Dau} />
                     </Switch>
                     
                 </BrowserRouter>

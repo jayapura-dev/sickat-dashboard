@@ -15,9 +15,20 @@ const Header = () => {
                     <li className="item">
                        <Link to="/Contack">Grafik</Link>
                     </li>
-                    <li className="item">
-                        <Link to="/"></Link>
-                    </li>
+                
+                    <div className="ui simple dropdown item">
+                        Realisasi <i className="dropdown icon"></i>
+                        <div class="menu">
+                            <li className="item">
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to="/Dau">Dana Alokasi Umum</Link>
+                            </li>
+                            <li className="item">Dana Alokasi Khusus</li>
+                            <li className="item">Dana Otonomi Khusus</li>
+                            <li className="item">Dana Pendapat Asli Daerah</li>
+                            <li className="item">Dana Bagi Hasil</li>
+                            <li className="item">Dana Insentif Daerah</li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
