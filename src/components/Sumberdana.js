@@ -26,7 +26,7 @@ class DataSumberdana extends React.Component {
                 </div>
                 <ReactToPdf targetRef={su} filename="Realisasi Sumber Dana.pdf" options={options}>
                   {({toPdf}) => (
-                      <button className="ui button primary" onClick={toPdf}><i class="print icon"></i> Export</button>
+                      <button className="ui button primary" onClick={toPdf}><i className="print icon"></i> Export</button>
                   )}
                 </ReactToPdf>
                 <hr />
@@ -34,11 +34,11 @@ class DataSumberdana extends React.Component {
                     <table className="ui celled table striped small">
                       <thead>
                         <tr>
-                          <th rowspan="2">SUMBER DANA</th>
-                          <th rowspan="2" className="ui center aligned">PAGU</th>
-                          <th rowspan="2" className="ui center aligned">REALISASI UANG</th>
-                          <th rowspan="2" className="ui center aligned">SISA</th>
-                          <th className="ui center aligned" colspan="2">PROSENTASE</th>
+                          <th rowSpan="2">SUMBER DANA</th>
+                          <th rowSpan="2" className="ui center aligned">PAGU</th>
+                          <th rowSpan="2" className="ui center aligned">REALISASI UANG</th>
+                          <th rowSpan="2" className="ui center aligned">SISA</th>
+                          <th className="ui center aligned" colSpan="2">PROSENTASE</th>
                         </tr>
                         <tr>
                           <th>PK (%)</th>

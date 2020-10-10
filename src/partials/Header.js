@@ -18,12 +18,16 @@ const Header = () => {
                 
                     <div className="ui simple dropdown item">
                         Realisasi <i className="dropdown icon"></i>
-                        <div class="menu">
+                        <div className="menu">
                             <li className="item">
                                 <Link style={{ textDecoration: 'none', color: 'black' }} to="/Dau">Dana Alokasi Umum</Link>
                             </li>
-                            <li className="item">Dana Alokasi Khusus</li>
-                            <li className="item">Dana Otonomi Khusus</li>
+                            <li className="item">
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to="/Dak">Dana Alokasi Khusus</Link>
+                            </li>
+                            <li className="item">
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to="/Otsus">Dana Otonomi Khusus</Link>
+                            </li>
                             <li className="item">Dana Pendapat Asli Daerah</li>
                             <li className="item">Dana Bagi Hasil</li>
                             <li className="item">Dana Insentif Daerah</li>
