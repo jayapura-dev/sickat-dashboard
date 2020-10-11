@@ -5,6 +5,9 @@ import {
     FETCH_REALISASI_DAU,
     FETCH_REALISASI_DAK,
     FETCH_REALISASI_OTSUS,
+    FETCH_REALISASI_PAD,
+    FETCH_REALISASI_DBH,
+    FETCH_REALISASI_DID,
 } from './types';
 
 export const fetchSumberdana = () => async dispatch => {
@@ -35,4 +38,22 @@ export const fetchRealisasiOtsus = () => async dispatch => {
     const response = await sickat.get('/realisasiotsus/');
 
     dispatch({ type: FETCH_REALISASI_OTSUS, payload: response.data.result });
+}
+
+export const fetchRealisasiPad = () => async dispatch => {
+    const response = await sickat.get('/realisasipad/');
+
+    dispatch({ type: FETCH_REALISASI_PAD, payload: response.data.result });
+}
+
+export const fetchRealisasiDbh = () => async dispatch => {
+    const response = await sickat.get('/realisasidbh/');
+
+    dispatch({ type: FETCH_REALISASI_DBH, payload: response.data.result });
+}
+
+export const fetchRealisasiDid = () => async dispatch => {
+    const response = await sickat.get('/realisasidid/');
+
+    dispatch({ type: FETCH_REALISASI_DID, payload: response.data.result });
 }

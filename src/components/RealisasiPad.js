@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchRealisasiDau } from '../actions';
+import { fetchRealisasiPad } from '../actions';
 import NumberFormat from 'react-number-format';
 import ReactToPdf from 'react-to-pdf';
 
-class RealisasiDau extends React.Component {
+class RealisasiPad extends React.Component {
     componentDidMount() {
-        this.props.fetchRealisasiDau();
+        this.props.fetchRealisasiPad();
     }
 
     renderList(){
@@ -20,7 +20,7 @@ class RealisasiDau extends React.Component {
             <div>
               <div className="ui segment">
                 <div className="ui header">
-                  <h4>REALISASI DAU (PERANGAKAT DAERAH)</h4>
+                  <h4>REALISASI PAD (PERANGAKAT DAERAH)</h4>
                 </div>
                 <ReactToPdf targetRef={ref} filename="Realisasi PD.pdf" options={options}>
                   {({toPdf}) => (
@@ -53,7 +53,7 @@ class RealisasiDau extends React.Component {
                         </tr>
                       </thead>
                     <tbody>
-                      {this.props.dau.map(item => (
+                      {this.props.pad.map(item => (
                       <tr key={item.id_pd}>
                         <td>{item.no}</td>
                         <td className="uppercase">{item.pd}</td>
@@ -74,7 +74,7 @@ class RealisasiDau extends React.Component {
                     <tfoot>
                       <tr>
                         <th></th>
-                        <th>54 PERANGKAT DAERAH</th>
+                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -105,7 +105,7 @@ class RealisasiDau extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    return { dau:  Object.values(state.dau) };
+    return { pad:  Object.values(state.pad) };
 }
 
-export default connect(mapStateToProps, { fetchRealisasiDau })(RealisasiDau);
+export default connect(mapStateToProps, { fetchRealisasiPad })(RealisasiPad);

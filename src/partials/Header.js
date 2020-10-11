@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="inverted">
             <div className="ui container">
-                <div className="ui green fixed inverted menu">
+                <div className="ui teal fixed inverted menu">
                     <div className="item">
                         <img src="/assets/images/logo-kabupaten.png" alt="logo" />
                     </div>
@@ -13,7 +13,7 @@ const Header = () => {
                         <Link to="/">Matriks</Link>
                     </li>
                     <li className="item">
-                       <Link to="/Contack">Grafik</Link>
+                       <Link to="/Grafik">Grafik</Link>
                     </li>
                 
                     <div className="ui simple dropdown item">
@@ -28,9 +28,15 @@ const Header = () => {
                             <li className="item">
                                 <Link style={{ textDecoration: 'none', color: 'black' }} to="/Otsus">Dana Otonomi Khusus</Link>
                             </li>
-                            <li className="item">Dana Pendapat Asli Daerah</li>
-                            <li className="item">Dana Bagi Hasil</li>
-                            <li className="item">Dana Insentif Daerah</li>
+                            <li className="item">
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to="/Pad">Dana Pendapatan Asli Daerah</Link>
+                            </li>
+                            <li className="item">
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to="/Dbh">Dana Bagi Hasil</Link>
+                            </li>
+                            <li className="item">
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to="/Did">Dana Insentif Daerah</Link>
+                            </li>
                         </div>
                     </div>
                 </div>

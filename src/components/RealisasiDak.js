@@ -24,7 +24,7 @@ class RealisasiDak extends React.Component {
                 </div>
                 <ReactToPdf targetRef={ref} filename="Realisasi PD.pdf" options={options}>
                   {({toPdf}) => (
-                      <button className="ui button primary" onClick={toPdf}><i class="print icon"></i> Export</button>
+                      <button className="ui button primary" onClick={toPdf}><i className="print icon"></i> Export</button>
                   )}
                 </ReactToPdf>
                 <hr />
@@ -32,14 +32,14 @@ class RealisasiDak extends React.Component {
                     <table className="ui teal celled table small">
                       <thead>
                         <tr>
-                          <th rowspan="2">No</th>
-                          <th rowspan="2">PERANNGKAT DAERAH</th>
-                          <th rowspan="2" className="ui center aligned">PAGU</th>
-                          <th rowspan="2" className="ui center aligned">REALISASI UANG</th>
-                          <th rowspan="2" className="ui center aligned">SISA</th>
-                          <th className="ui center aligned" colspan="2">PROSENTASE (%)</th>
-                          <th className="ui center aligned" colspan="3">PROGRAM</th>
-                          <th className="ui center aligned" colspan="3">KEGIATAN</th>
+                          <th rowSpan="2">No</th>
+                          <th rowSpan="2">PERANNGKAT DAERAH</th>
+                          <th rowSpan="2" className="ui center aligned">PAGU</th>
+                          <th rowSpan="2" className="ui center aligned">REALISASI UANG</th>
+                          <th rowSpan="2" className="ui center aligned">SISA</th>
+                          <th className="ui center aligned" colSpan="2">PROSENTASE (%)</th>
+                          <th className="ui center aligned" colSpan="3">PROGRAM</th>
+                          <th className="ui center aligned" colSpan="3">KEGIATAN</th>
                         </tr>
                         <tr>
                           <th>PK</th>
